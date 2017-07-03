@@ -5,16 +5,16 @@
 }
 
 #brand_logo{
-    margin-top: 2em;
+    margin-top: 4em;
     margin-left: 2em;
-    margin-bottom: 6em;
+    margin-bottom: 10em;
     width: auto;
     height: 150px;
 }
 
 #center_block{
 background-image: url('https://upload.wikimedia.org/wikipedia/commons/8/82/Clouds_%285%29.jpg');
-  background-size: 1300px 400px;
+  background-size: 1300px 600px;
   color: #fff;
   padding-bottom: 5rem;
   background-repeat: no-repeat;
