@@ -22,9 +22,9 @@
 
 #center_block{
 background-image: url('../images/grey_background.jpg');
-  background-size: 1300px 1200px;
+  background-size: cover;
   color: #fff;
-  padding-bottom: 50rem;
+  padding-bottom: 0rem;
   background-repeat: repeat-y;
 }
 
@@ -90,23 +90,6 @@ background-image: url('../images/grey_background.jpg');
 }
 .categories .section-description { 
   margin-bottom: 4rem;
-}
-
-.empty{
-    opacity:0;
-    width:0;
-}
-.spacer{
-    opacity:0;
-    width: 3rem;
-}
-
-.footer.columns{
-    text-align: center;
-    margin-top: 3rem;
-    left-margin: 3rem;
-    right-margin: 3rem;
-    margin-bottom: 5rem;
 }
 
 /* Bigger than 550 */
