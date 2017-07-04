@@ -91,7 +91,7 @@ background-image: url('../images/grey_background.jpg');
     width: 85%;
     padding: 0; }
     .footer.block{
-    width: 40%;
+    width: 200px;
     margin-left: 25%;
     }
 }
