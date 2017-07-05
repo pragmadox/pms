@@ -4,9 +4,10 @@
 }
 
 .box {
-  width: 325px;
+  width: 275px;
   margin-top:0px;
   margin-left:0px;
+  margin-bottom:0px;
   text-align: center;
   color: #fff;
   font-size: 150%;
@@ -16,7 +17,7 @@
 .options {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(175px, 3fr));
-  grid-column-gap: 75px;
+  grid-column-gap: 85px;
   margin-left: 20%;
   margin-right: 20%;
   margin-top: 0px;
@@ -25,5 +26,5 @@
 
 .navbutton{
   text-align: center;
-  justify-self: center;
+  self-justify: center;
 }
