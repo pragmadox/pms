@@ -55,9 +55,9 @@
 
 #brand_logo{
     margin-top: 0em;
-    margin-left: 2em;
+    margin-left: 1.5em;
     margin-bottom: 0em;
-    width: 250px;
+    width: 350px;
     height: auto;
 }
 
@@ -108,13 +108,13 @@ background-image: url('../images/grey_background.jpg');
   float: left;
   box-sizing: border-box; }
 
-/* For devices larger than 400px */
+/* For devices larger than 250px */
 @media (min-width: 250px) {
    .container {
     width: 85%;
     padding: 0; }
     .footer.block{
-    width: 150px;
+    width: 200px;
     margin-left: 25%;
     }
 }
@@ -182,7 +182,7 @@ background-image: url('../images/grey_background.jpg');
   .offset-by-one-half.columns     { margin-left: 52%; }
 
   .footer.block{
-        width: 150px;
+        width: 175px;
         margin-left: 10%;
     }
 }
