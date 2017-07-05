@@ -38,6 +38,7 @@
 .option_button {
   position: relative;
   margin: 0px;
+  align-content: center;
   overflow: hidden;
 }
 .option_button img {
@@ -55,7 +56,7 @@
 
 .brand_logo{
     margin-top: 0em;
-    margin-left: 1.5em;
+    margin-left: 0;
     margin-bottom: 0em;
     width: 350px;
     height: auto;
