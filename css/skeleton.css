@@ -71,6 +71,7 @@
 background-image: url('../images/grey_background.jpg');
   background-size: auto;
   color: #fff;
+  padding-right: 1rem;
   padding-bottom: 0rem;
   background-repeat: no-repeat;
 }
