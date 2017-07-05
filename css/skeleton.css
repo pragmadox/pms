@@ -27,20 +27,25 @@
 
 /* Custom for my site */
 
+#main_logo{
+    width:400px;
+    height:auto;
+}
+
 .option_button {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
 }
 
 .option_button {
   position: relative;
-  margin: 0px;
-  align-content: center;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  width: 175px;
   overflow: hidden;
 }
+
 .option_button img {
   max-width: 100%;
   -moz-transition: all 0.3s;
@@ -54,45 +59,14 @@
   transform: scale(0.9);
 }
 
-.brand_logo{
-    margin-top: 0em;
-    margin-left: 0;
-    margin-bottom: 0em;
-    width: 350px;
-    height: auto;
-}
-
-#options{
-  background-size: cover;
-  color: #fff;
-  padding-bottom: 0rem;
-}
-
-#center_block{
-background-image: url('../images/grey_background.jpg');
-  background-size: auto;
-  color: #fff;
-  padding-right: 1rem;
-  padding-bottom: 0rem;
-  background-repeat: no-repeat;
-}
-
 /* Custom classes */
 
-.empty{
-    opacity:0;
-    width:0;
-}
-.spacer{
-    opacity:0;
-    width: 3rem;
-}
-
-.footer.block{
-    text-align: center;
-    margin-top: 2rem;
-    margin-left: 10%;
-    margin-right: 2rem;
+#navigation_background{
+  background-color: grey;
+  border-width: thick;
+  border-color: darkslategrey;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 /* Grid

@@ -1,0 +1,29 @@
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.box {
+  width: 325px;
+  margin-top:0px;
+  margin-left:0px;
+  text-align: center;
+  color: #fff;
+  font-size: 150%;
+  justify-self: center;
+}
+
+.options {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(175px, 3fr));
+  grid-column-gap: 75px;
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-top: 0px;
+  text-align:center;
+}
+
+.navbutton{
+  text-align: center;
+  justify-self: center;
+}
