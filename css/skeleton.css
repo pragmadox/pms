@@ -28,141 +28,30 @@
 /* Custom for my site */
 
 .dropdown{
-    opacity: 0;
     display: none;
 }
 
+#center_block{
+    background-image:url("../images/cloud_background.jpg");
+    background-size: cover;
+}
+
 #main_logo{
+    width: 300px;
     height:auto;
     margin-bottom: 0px;
 }
-
-.option_button {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+.expand:hover div{
+  display: inline-block;
 }
 
-.option_button {
-  position: relative;
-  margin-top: 25px;
-  margin-bottom: 25px;
-  width: 212.5px;
-  overflow: hidden;
-}
-
-.option_button img {
-  max-width: 100%;
-  -moz-transition: all 0.3s;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
-}
-
-.option_button:hover img {
-  -moz-transform: scale(0.9);
-  -webkit-transform: scale(0.9);
-  transform: scale(0.9);
-}
-
-.option_button:hover div{
-  opacity: 100;
-  display: block;
-}
-
-/* Custom classes */
+/* Custom classes and IDs */
 
 #navigation_background{
-  background-color: grey;
-  border-width: thick;
-  border-color: darkslategrey;
+  background-color: black;
   background-size: cover;
   background-repeat: no-repeat;
-}
-
-/* Grid
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-.container {
-  position: relative;
-  width: 100%;
-  max-width: 960px;
-  margin: 0 auto;
-  padding: 0 20px;
-  box-sizing: border-box; }
-.column,
-.columns {
-  width: 100%;
-  float: left;
-  box-sizing: border-box; }
-
-/* For devices larger than 250px */
-@media (min-width: 250px) {
-   .container {
-    width: 85%;
-    padding: 0; }
-}
-
-/* For devices larger than 550px */
-@media (min-width: 550px) {
-  .container {
-    width: 80%; }
-  .column,
-  .columns {
-    margin-left: 4%; }
-  .column:first-child,
-  .columns:first-child {
-    margin-left: 0; }
-
-  .one.column,
-  .one.columns                    { width: 4.66666666667%; }
-  .two.columns                    { width: 13.3333333333%; }
-  .three.columns                  { width: 22%;            }
-  .four.columns                   { width: 30.6666666667%; }
-  .five.columns                   { width: 39.3333333333%; }
-  .six.columns                    { width: 48%;            }
-  .seven.columns                  { width: 56.6666666667%; }
-  .eight.columns                  { width: 65.3333333333%; }
-  .nine.columns                   { width: 74.0%;          }
-  .ten.columns                    { width: 82.6666666667%; }
-  .eleven.columns                 { width: 91.3333333333%; }
-  .twelve.columns                 { width: 100%; margin-left: 0; }
-
-  .one-third.column               { width: 30.6666666667%; }
-  .two-thirds.column              { width: 65.3333333333%; }
-
-  .one-half.column                { width: 48%; }
-
-  /* Offsets */
-  .offset-by-one.column,
-  .offset-by-one.columns          { margin-left: 8.66666666667%; }
-  .offset-by-two.column,
-  .offset-by-two.columns          { margin-left: 17.3333333333%; }
-  .offset-by-three.column,
-  .offset-by-three.columns        { margin-left: 26%;            }
-  .offset-by-four.column,
-  .offset-by-four.columns         { margin-left: 34.6666666667%; }
-  .offset-by-five.column,
-  .offset-by-five.columns         { margin-left: 43.3333333333%; }
-  .offset-by-six.column,
-  .offset-by-six.columns          { margin-left: 52%;            }
-  .offset-by-seven.column,
-  .offset-by-seven.columns        { margin-left: 60.6666666667%; }
-  .offset-by-eight.column,
-  .offset-by-eight.columns        { margin-left: 69.3333333333%; }
-  .offset-by-nine.column,
-  .offset-by-nine.columns         { margin-left: 78.0%;          }
-  .offset-by-ten.column,
-  .offset-by-ten.columns          { margin-left: 86.6666666667%; }
-  .offset-by-eleven.column,
-  .offset-by-eleven.columns       { margin-left: 95.3333333333%; }
-
-  .offset-by-one-third.column,
-  .offset-by-one-third.columns    { margin-left: 34.6666666667%; }
-  .offset-by-two-thirds.column,
-  .offset-by-two-thirds.columns   { margin-left: 69.3333333333%; }
-
-  .offset-by-one-half.column,
-  .offset-by-one-half.columns     { margin-left: 52%; }
-
+  justify-self:center;
 }
 
 
@@ -175,6 +64,8 @@ html {
   font-size: 62.5%; }
 body {
   background-color: black;
+  background-repeat: no-repeat;
+  background-size: cover;
   font-size: 1.5em; /* currently ems cause chrome bug misinterpreting rems on body element */
   line-height: 1.6;
   font-weight: 400;
@@ -239,7 +130,7 @@ input[type="button"] {
   white-space: nowrap;
   background-color: #1A375B;
   border-radius: 4px;
-  border: 1px solid #bbb;
+  border: 1px solid #1A375B;
   cursor: pointer;
   box-sizing: border-box; }
 .button:hover,
@@ -252,8 +143,8 @@ button:focus,
 input[type="submit"]:focus,
 input[type="reset"]:focus,
 input[type="button"]:focus {
-  color: #333;
-  border-color: #888;
+  color: #FFF;
+  border-color: #1A375B;
   outline: 0; }
 .button.button-primary,
 button.button-primary,
@@ -262,7 +153,7 @@ input[type="reset"].button-primary,
 input[type="button"].button-primary {
   color: #8C641F;
   background-color: #174E7F;
-  border-color: #33C3F0; }
+  border-color: #174E7F; }
 .button.button-primary:hover,
 button.button-primary:hover,
 input[type="submit"].button-primary:hover,
@@ -274,8 +165,8 @@ input[type="submit"].button-primary:focus,
 input[type="reset"].button-primary:focus,
 input[type="button"].button-primary:focus {
   color: #FFF;
-  background-color: #1EAEDB;
-  border-color: #1EAEDB; }
+  background-color: #174E7F;
+  border-color: #174E7F; }
 
 
 /* Forms
@@ -359,22 +250,6 @@ li {
   margin-bottom: 1rem; }
 
 
-/* Code
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-code {
-  padding: .2rem .5rem;
-  margin: 0 .2rem;
-  font-size: 90%;
-  white-space: nowrap;
-  background: #F1F1F1;
-  border: 1px solid #E1E1E1;
-  border-radius: 4px; }
-pre > code {
-  display: block;
-  padding: 1rem 1.5rem;
-  white-space: pre; }
-
-
 /* Tables
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 th,
@@ -455,19 +330,3 @@ near the relevant code. For example, if you wanted to change the styles for butt
 on small devices, paste the mobile query code up in the buttons section and style it
 there.
 */
-
-
-/* Larger than mobile */
-@media (min-width: 400px) {}
-
-/* Larger than phablet (also point when grid becomes active) */
-@media (min-width: 550px) {}
-
-/* Larger than tablet */
-@media (min-width: 750px) {}
-
-/* Larger than desktop */
-@media (min-width: 1000px) {}
-
-/* Larger than Desktop HD */
-@media (min-width: 1200px) {}

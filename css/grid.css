@@ -1,10 +1,13 @@
 .wrapper {
   display: grid;
   grid-template-columns: 1fr;
+  jusify-self: center;
 }
-
-.box {
-  width: 275px;
+.box{
+    justify-self:center;
+}
+.box img {
+  width: 265px;
   margin-top:0px;
   margin-left:0px;
   margin-bottom:0px;
@@ -14,17 +17,188 @@
   justify-self: center;
 }
 
-.options {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(175px, 3fr));
-  grid-column-gap: 85px;
-  margin-left: 20%;
-  margin-right: 20%;
-  margin-top: 0px;
-  text-align:center;
+/* Larger than mobile */
+@media (min-width: 250px) {
+    .options {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 3fr));
+      grid-column-gap: 85px;
+      margin-left: 20%;
+      margin-right: 20%;
+      margin-top: 25px;
+      text-align:center;
+    }
+    .options navdiv{
+      width: 175px;
+      text-align: center;
+      color: #fff;
+      font-size: 150%;
+      justify-self: center;
+    }
+
+    .circle img{
+      width: 180px;
+    }
+    .button{
+      width: 125px;
+    }
+    
 }
 
-.navbutton{
+/* Larger than phablet (also point when grid becomes active) */
+@media (min-width: 550px) {
+    .options {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 3fr));
+      grid-column-gap: 1.5em;
+      margin-left: 10%;
+      margin-right: 10%;
+      margin-top: 25px;
+      text-align:center;
+      justify-self:center;
+    }
+    .options navdiv {
+      width: 125px;
+      margin-top:0px;
+      margin-left:0px;
+      margin-bottom:0px;
+      text-align: center;
+      color: #fff;
+      font-size: 150%;
+      justify-self: center;
+    }
+    .circle img{
+      width: 125px;
+    }
+    .button{
+      width: 125px;
+    }
+}
+
+@media (min-width: 725px) {
+    .options {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 3fr));
+      grid-column-gap: 1em;
+      margin-left: 10%;
+      margin-right: 10%;
+      margin-top: 25px;
+      text-align:center;
+      justify-self:center;
+    }
+    .options navdiv {
+      width: 185px;
+      margin-top:0px;
+      margin-left:0px;
+      margin-bottom:0px;
+      text-align: center;
+      color: #fff;
+      font-size: 150%;
+      justify-self: center;
+    }
+    .circle img{
+      width: 185px;
+    }
+    .button{
+      width: 125px;
+    }
+}
+
+/* Larger than Desktop HD */
+@media (min-width: 900px) {
+     .options {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 3fr));
+      grid-column-gap: 1em;
+      margin-left: 10%;
+      margin-right: 10%;
+      margin-top: 25px;
+      text-align:center;
+      justify-self:center;
+    }
+    .options navdiv {
+      width: 200px;
+      margin-top:0px;
+      margin-left:0px;
+      margin-bottom:0px;
+      text-align: center;
+      color: #fff;
+      font-size: 150%;
+      justify-self: center;
+    }
+    .circle img{
+      width: 200px;
+    }
+    .button{
+      width: 125px;
+    }
+}
+.navdiv{
+  text-align: center;
+  self-justify: center;
+}
+
+/* Larger than Desktop HD */
+@media (min-width: 1025px) {
+     .options {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(175px, 3fr));
+      grid-column-gap: 1em;
+      margin-left: 15%;
+      margin-right: 15%;
+      margin-top: 25px;
+      text-align:center;
+      justify-self:center;
+    }
+    .options navdiv {
+      width: 175px;
+      margin-top:0px;
+      margin-left:0px;
+      margin-bottom:0px;
+      text-align: center;
+      color: #fff;
+      font-size: 150%;
+      justify-self: center;
+    }
+    .circle img{
+      width: 175px;
+    }
+    .button{
+      width: 125px;
+    }
+}
+
+@media (min-width: 1200px) {
+     .options {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 3fr));
+      grid-column-gap: 100px;
+      margin-left: 10%;
+      margin-right: 10%;
+      margin-top: 25px;
+      text-align:center;
+      justify-self:center;
+    }
+    .options navdiv {
+      width: 175px;
+      margin-top:0px;
+      margin-left:0px;
+      margin-bottom:0px;
+      text-align: center;
+      color: #fff;
+      font-size: 150%;
+      justify-self: center;
+    }
+    .circle img{
+      width: 175px;
+      justify-self:center;
+    }
+    .button{
+      width: 125px;
+    }
+}
+
+.navdiv{
   text-align: center;
   self-justify: center;
 }
