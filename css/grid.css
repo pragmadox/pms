@@ -18,15 +18,16 @@
 }
 
 /* Larger than mobile */
-@media (min-width: 250px) {
+@media (min-width: 300px) {
     .options {
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(250px, 3fr));
+      grid-template-columns: repeat(auto-fill, minmax(300px, 3fr));
       grid-column-gap: 85px;
-      margin-left: 20%;
-      margin-right: 20%;
+      margin-left: 10%;
+      margin-right: 10%;
       margin-top: 25px;
       text-align:center;
+			justify-self: center;
     }
     .options navdiv{
       width: 175px;
@@ -46,11 +47,11 @@
 }
 
 /* Larger than phablet (also point when grid becomes active) */
-@media (min-width: 550px) {
+@media (min-width: 400px) {
     .options {
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(250px, 3fr));
-      grid-column-gap: 1.5em;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 3fr));
+      
       margin-left: 10%;
       margin-right: 10%;
       margin-top: 25px;
